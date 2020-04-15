@@ -1,0 +1,74 @@
+@import "variables.less";
+@import "mixins.less";
+
+.br-theme-bars-square {
+
+  .br-widget {
+    height: 15px;
+    white-space: nowrap;
+
+    a {
+      display: block;
+      width: 30px;
+      height: 30px;
+      float: left;
+      border: 2px solid lighten(@blue-color, 25%);
+      background-color: white;
+      margin: 2px;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 2;
+      text-align: center;
+      color: lighten(@blue-color, 25%);
+      font-weight: 600;
+
+      &.br-active,
+      &.br-selected {
+        border: 2px solid @blue-color;
+        color: @blue-color;
+      }
+    }
+
+    .br-current-rating {
+      clear: both;
+      width: 330px;
+      text-align: center;
+      font-weight: 600;
+      display: block;
+      padding: .5em 0;
+      color: #646464;
+    }
+  }
+
+  .br-readonly {
+    a {
+      cursor: default;
+
+      &.br-active, &.br-selected {
+        border: 2px solid lighten(@blue-color, 10%);
+        color: lighten(@blue-color, 10%);
+      }
+    }
+  }
+
+}
+
+@media print {
+  .br-theme-bars-square {
+
+    .br-widget {
+      a {
+        border: 2px solid lighten(black, 70%);
+        color: lighten(black, 70%);
+
+        &.br-active,
+        &.br-selected {
+          border: 2px solid black;
+          color: black;
+        }
+      }
+    }
+
+  }
+}

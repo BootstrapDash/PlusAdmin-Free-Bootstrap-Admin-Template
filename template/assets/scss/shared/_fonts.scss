@@ -1,0 +1,47 @@
+/* Fonts */
+
+//PT_Sans
+@font-face {
+  font-family: "Open Sans";
+  src: url("../../fonts/Opensans/OpenSans-Light.eot"); /* IE9 Compat Modes */
+  src: url("../../fonts/Opensans/OpenSans-Light.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../../fonts/Opensans/OpenSans-Light.woff")
+      format("woff"),
+    /* Pretty Modern Browsers */ url("../../fonts/Opensans/OpenSans-Light.ttf")
+      format("truetype"); /* Safari, Android, iOS */
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("../../fonts/Opensans/OpenSans-Regular.eot"); /* IE9 Compat Modes */
+  src: url("../../fonts/Opensans/OpenSans-Regular.woff2") format("woff2"),
+    /* Super Modern Browsers */
+      url("../../fonts/Opensans/OpenSans-Regular.woff") format("woff"),
+    /* Pretty Modern Browsers */
+      url("../../fonts/Opensans/OpenSans-Regular.ttf") format("truetype"); /* Safari, Android, iOS */
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("../../fonts/Opensans/OpenSans-SemiBold.eot"); /* IE9 Compat Modes */
+  src: url("../../fonts/Opensans/OpenSans-SemiBold.woff2") format("woff2"),
+    /* Super Modern Browsers */
+      url("../../fonts/Opensans/OpenSans-SemiBold.woff") format("woff"),
+    /* Pretty Modern Browsers */
+      url("../../fonts/Opensans/OpenSans-SemiBold.ttf") format("truetype"); /* Safari, Android, iOS */
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("../../fonts/Opensans/OpenSans-Bold.eot"); /* IE9 Compat Modes */
+  src: url("../../fonts/Opensans/OpenSans-Bold.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../../fonts/Opensans/OpenSans-Bold.woff")
+      format("woff"),
+    /* Pretty Modern Browsers */ url("../../fonts/Opensans/OpenSans-Bold.ttf")
+      format("truetype"); /* Safari, Android, iOS */
+  font-weight: 700;
+  font-style: normal;
+}

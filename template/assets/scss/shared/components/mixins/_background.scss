@@ -1,0 +1,21 @@
+// Background Mixins //
+@mixin bg($color) {
+  background: $color;
+}
+
+@mixin bg-inverse-variant($color) {
+  background: rgba($color, 0.2);
+}
+
+@mixin hexagon-variations($color) {
+  background: $color;
+  color: $white;
+  &:after {
+    border: 26px solid transparent;
+    border-top: 13px solid $color;
+  }
+  &:before {
+    border: 26px solid transparent;
+    border-bottom: 13px solid $color;
+  }
+}

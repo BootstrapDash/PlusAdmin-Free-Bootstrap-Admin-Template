@@ -1,0 +1,106 @@
+/* Tables */
+
+.table {
+  margin-bottom: 0;
+
+  thead {
+    th {
+      border-top: 0;
+      border-bottom-width: 1px;
+      font-family: $type-1;
+      font-weight: $font-weight-semibold;
+      font-weight: initial;
+
+      i {
+        margin-left: 0.325rem;
+      }
+    }
+  }
+
+  th,
+  td {
+    vertical-align: middle;
+    font-size: $default-font-size;
+    line-height: 1;
+    white-space: nowrap;
+
+    img {
+      width: 36px;
+      height: 36px;
+      border-radius: 100%;
+    }
+
+    .badge {
+      margin-bottom: 0;
+    }
+  }
+
+  &.table-borderless {
+    border: none;
+
+    tr,
+    td,
+    th {
+      border: none;
+    }
+  }
+  &.apointment-table {
+    td {
+      img {
+        width: 20px;
+        height:20px;
+      }
+    }
+  }
+}
+.custom-table {
+  thead {
+    th {
+      font-weight: $font-weight-bold;
+      font-size: 14px;
+      background: $thead-bg;
+      &:first-child {
+        padding-left: 28px;
+        .rtl & {
+          padding-right: 28px;
+        }
+      }
+    }
+    tr {
+      th {
+        border: 0;
+      }
+    }
+  }
+  th,
+  td {
+    vertical-align: middle;
+    font-size: $default-font-size;
+    line-height: 1;
+    white-space: nowrap;
+    font-weight: $font-weight-semibold;
+    padding: 12px;
+
+    img {
+      width: 23px;
+      height: 23px;
+      border-radius: 0;
+    }
+  }
+  td:first-child {
+    padding-left: 28px;
+    .rtl & {
+      padding-right: 28px;
+    }
+  }
+  tbody {
+    tr {
+      border-bottom: 1px solid $border-color;
+      &:first-child {
+      td {
+        border: 0;
+      }
+    }
+    }
+  }
+}

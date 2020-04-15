@@ -1,0 +1,401 @@
+/* Dashboard */
+
+.main-panel {
+  .content-wrapper {
+    .btn-outline-sales {
+      height: 35px;
+      width: 35px;
+      border-radius: 4px;
+      border: 2px solid #5e6eed;
+      i {
+        color: #5e6eed;
+      }
+      &.profit {
+        border: 2px solid #00cff4;
+      }
+    }
+    .header-right {
+      a {
+        color: $border-right-color;
+        text-decoration: none;
+        font-weight: $font-weight-bold;
+        &:first-child {
+          border-right: 2px solid $border-right-color;
+          .rtl & {
+            border: 0;
+            border-left: 2px solid $border-right-color;
+          }
+        }
+        p {
+          line-height: 1;
+        }
+      }
+      .btn-icon-text {
+        font-size: 14px;
+        background: theme-color(success);
+        padding: 0 19px 0 0;
+        border: 0;
+        color: $white;
+        display: flex;
+        align-items: center;
+        .rtl & {
+          padding: 0 0 0 19px;
+        }
+        i {
+          padding: 7px;
+          display: inline-block;
+          background: #069962;
+          margin-right: 15px;
+          border-radius: 0;
+          border-top-left-radius: 4px;
+          border-bottom-left-radius: 4px;
+          .rtl & {
+            margin: 0;
+            margin-left: 15px;
+            border-radius: 0;
+            border-top-right-radius: 4px;
+            border-bottom-right-radius: 4px;
+          }
+        }
+      }
+      h4 {
+        &.fs-20 {
+          font-size: 20px;
+        }
+      }
+    }
+    .sales-header-right {
+      .head-count {
+        line-height: 0.5;
+        margin-top: 5px;
+      }
+    }
+    .flot-chart {
+      height: 216px;
+      .flot-text {
+        .flot-x-axis {
+          .tickLabel {
+            color: #6c7293;
+            font-size: 13px;
+          }
+        }
+      }
+    }
+    .card-img {
+      background-image: url("../../images/bg_card.jpg");
+      background-size: cover;
+    }
+    .star-color {
+      color: #fdb82c;
+    }
+    .br-theme-css-stars {
+      .br-widget {
+        a:after {
+          content: "\2605";
+          font-size: 15px;
+          color: #d2d2d2;
+        }
+      }
+    }
+    .br-theme-css-stars {
+      .br-widget {
+        a.br-selected:after {
+          color: #edb867;
+          font-size: 15px;
+        }
+      }
+    }
+    .card-stat {
+      background-image: url("../../images/dashboard/img_4.jpg");
+      background-size: cover;
+    }
+    .flot-bar-wrapper {
+      .flot-chart {
+        height: 88px;
+        width: 107px;
+      }
+    }
+    .color-card-wrapper {
+      .card-body {
+        position: relative;
+        padding-top: 100px;
+
+        img.card-top-img {
+          position: absolute;
+          z-index: 1;
+          top: 0;
+          left: 0;
+          right: 0;
+          height: 180px;
+          object-fit: cover;
+        }
+        .color-card-outer {
+          position: relative;
+          z-index: 2;
+          .color-card {
+            width: 112px;
+            height: 128px;
+            color: $white;
+            padding: 27px 0 0 12px;
+            .rtl & {
+              padding: 11px 12px 0 0;
+            }
+            @media (max-width: 576px) {
+              width: 95px;
+              height: 94px;
+              padding: 8px 0 0 12px;
+            }
+            i {
+              font-size: 20px;
+            }
+            &.primary {
+              background: #5e6eed;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.color-card-wrapper {
+  .card-body {
+    position: relative;
+    padding-top: 100px;
+
+    img.card-top-img {
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 180px;
+      object-fit: cover;
+    }
+    .color-card-outer {
+      position: relative;
+      z-index: 2;
+      .color-card {
+        width: 112px;
+        height: 128px;
+        color: $white;
+        padding: 27px 0 0 12px;
+        @media (max-width: 576px) {
+          width: 95px;
+          height: 94px;
+          padding: 8px 0 0 12px;
+        }
+        i {
+          font-size: 20px;
+        }
+        &.primary {
+          background: #5e6eed;
+        }
+      }
+    }
+  }
+}
+
+.hexagon {
+  height: 26px;
+  position: relative;
+  .hex-mid {
+    height: 26px;
+    width: 52px;
+    font-size: 20px;
+    text-align: center;
+    &:before,
+    &:after {
+      content: "";
+      height: 0px;
+      width: 0px;
+      position: absolute;
+      left: 0;
+    }
+    &:before {
+      bottom: 100%;
+    }
+    &:after {
+      top: 100%;
+    }
+  }
+}
+
+.title-banner {
+  background: theme-color(primary);
+  padding: 28px 36px;
+  color: $white;
+  width: 100%;
+  img {
+    width: 108px;
+  }
+}
+.time-banner {
+  padding: 28px 20px;
+  i {
+    font-size: 30px;
+    color: theme-color(primary);
+  }
+  p {
+    font-size: 12px;
+    color: theme-color(primary);
+  }
+}
+.hospital-features {
+  .badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 4px;
+    font-size: 10px;
+  }
+}
+.doctor-list {
+  padding: 18px 0;
+  border-bottom: 1px solid $border-color;
+  img {
+    border-radius: 20px;
+    width: 35px;
+    height: 35px;
+    margin-right: 14px;
+  }
+}
+.form-select-arrow {
+  min-width: 124px;
+  margin-left: 20px;
+  height: 30px;
+  background: url("../../images/dashboard/hospital/arrow-down.svg") no-repeat
+    95% 50%;
+  background-size: 13px 15px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px;
+  appearance: none;
+  outline-width: 0;
+  font-size: 14px;
+  color: #757575;
+  @media (max-width: 991px) {
+    margin-bottom: 10px;
+    margin-left: 0;
+  }
+  &.lg {
+    height: 45px;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+}
+.horizontal-legend {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  li {
+    display: inline-block;
+    margin-left: 30px;
+    font-size: 14px;
+    color: $text-muted;
+    span {
+      display: inline-block;
+      width: 13px;
+      height: 13px;
+      margin-right: 10px;
+    }
+  }
+}
+.card {
+  &.chat-with-doctor {
+    background: url("../../images/dashboard/hospital/img_call.png") #c9cef6
+      no-repeat 90% 100%;
+  }
+}
+.search-form {
+  position: relative;
+
+  .rtl & {
+    margin-right: 0;
+    margin-left: 15px;
+  }
+
+  i {
+    font-size: 20px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: $body-color;
+
+    .rtl & {
+      left: auto;
+      right: 0;
+    }
+  }
+
+  input {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    width: 0;
+    height: 35px;
+    padding: 0 0 0 20px;
+    position: relative;
+    transition: width 400ms ease, background 400ms ease;
+
+    &:focus {
+      background-color: transparent;
+      border-bottom: 1px solid $border-color;
+      border-radius: 0;
+      padding-left: 30px;
+      cursor: text;
+      outline: 0;
+      width: 140px;
+
+      .rtl & {
+        padding-right: 30px;
+        padding-left: 0;
+      }
+    }
+  }
+}
+.hr-banner {
+  img {
+    width: 125px;
+  }
+}
+.close-hr-banner {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: $text-muted;
+  font-size: 18px;
+  &:hover {
+    color: $body-color;
+  }
+}
+.rouded-flag {
+  font-size: 2.25rem;
+}
+.flag-icon-wrap {
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  overflow: hidden;
+  margin-right: 10px;
+}
+.filter-banner {
+  width: 100%;
+  background: url("../../images/dashboard/ecommerce/filterbg.jpg") no-repeat;
+  background-size: 100%;
+  padding: 30px 50px;
+  @media (max-width: 576px) {
+    padding: 20px 30px;
+  }
+}
+@each $color, $value in $theme-colors {
+  .hexagon-#{$color} {
+    @include hexagon-variations($value);
+  }
+}
+@each $color, $value in $theme-colors {
+  .badge-#{$color} {
+    @include badge-variations($value);
+  }
+}

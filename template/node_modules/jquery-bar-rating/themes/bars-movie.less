@@ -1,0 +1,74 @@
+@import "variables.less";
+@import "mixins.less";
+
+.br-theme-bars-movie {
+
+  .br-widget {
+    height: 10px;
+    white-space: nowrap;
+
+    a {
+      display: block;
+      width: 60px;
+      height: 8px;
+      float: left;
+      background-color: lighten(@blue-color, 25%);
+      margin: 1px;
+
+      &.br-active,
+      &.br-selected {
+        background-color: @blue-color;
+      }
+    }
+
+    .br-current-rating {
+      clear: both;
+      width: 240px;
+      text-align: center;
+      font-weight: 600;
+      display: block;
+      padding: .5em 0;
+      color: @blue-color;
+      font-weight: 400;
+    }
+  }
+
+  .br-readonly {
+    a {
+      cursor: default;
+
+      &.br-active, &.br-selected {
+        background-color: lighten(@blue-color, 10%);
+      }
+    }
+
+    .br-current-rating {
+      color: lighten(@blue-color, 10%);
+    }
+  }
+
+}
+
+@media print {
+  .br-theme-bars-movie {
+
+    .br-widget {
+      a {
+        border: 1px solid lighten(black, 70%);
+        background: white;
+        .box-sizing(border-box);
+
+        &.br-active,
+        &.br-selected {
+          border: 1px solid black;
+          background: white;
+        }
+      }
+
+      .br-current-rating {
+        color: black;
+      }
+    }
+
+  }
+}

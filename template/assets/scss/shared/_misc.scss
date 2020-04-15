@@ -1,0 +1,61 @@
+/* Miscellanoeous */
+body,
+html {
+  overflow-x: hidden;
+  @extend .pr-0;
+}
+
+*:-moz-full-screen,
+*:-webkit-full-screen,
+*:fullscreen *:-ms-fullscreen {
+  overflow: auto;
+}
+
+.container-scroller {
+  overflow: hidden;
+}
+
+pre {
+  background: color(gray-lighter);
+  padding: 15px;
+  font-size: 14px;
+}
+
+code {
+  padding: 5px;
+  color: theme-color(danger);
+  font-family: $type-1;
+  font-weight: $font-weight-light;
+  font-size: $default-font-size;
+  border-radius: 4px;
+}
+
+.page-header {
+  @extend .d-flex;
+  @extend .justify-content-between;
+  @extend .align-items-center;
+  margin: 0 0 1.5rem 0;
+  .header-right {
+    .btn {
+      padding: 0 14px;
+      + .btn {
+        border-left: 1px solid #000000;
+        border-radius: 0;
+      }
+      &.btn-product-text {
+        padding: 6px 15px 6px 0;
+        background: #00d284;
+        color: #fff;
+        border-radius: 4px;
+        i {
+          background: #069962;
+          padding: 3px 8px 3px 8px;
+          color: #fff;
+          font-size: 20px;
+          margin-right: 14px;
+        }
+      }
+    }
+  }
+}
+

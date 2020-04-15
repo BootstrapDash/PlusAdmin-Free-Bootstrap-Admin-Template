@@ -1,0 +1,69 @@
+.page-body-wrapper {
+  @include flex-direction(column);
+  @media (max-width: 991px) {
+    padding-top: $horizontal-top-navbar-height;
+  }
+  &.full-page-wrapper {
+    .content-wrapper {
+      width: 100%;
+      height: 100vh;
+      max-width: none;
+    }
+  }
+}
+.main-panel {
+  width: 100%;
+}
+.container-scroller {
+  .content-wrapper {
+    @include make-container();
+    @include make-container-max-widths();
+    margin: auto;
+    padding: 22px 0.937rem;
+    min-height: calc(100vh - 161px);
+  }
+  .page-body-wrapper {
+    background: $content-bg;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+//RTL layout
+.rtl {
+  direction: rtl;
+  text-align: right;
+
+  .sidebar {
+    .nav {
+      padding-right: 0;
+    }
+  }
+
+  .product-chart-wrapper,
+  .settings-panel .tab-content .tab-pane .scroll-wrapper,
+  .sidebar-fixed .nav,
+  .table-responsive,
+  ul.chats {
+    &::-webkit-scrollbar {
+      width: 0.5em;
+    }
+
+    &::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: darkgrey;
+      outline: 1px solid slategrey;
+    }
+  }
+}
+
+.horizontal-menu {
+  &.fixed-on-scroll {
+    + .page-body-wrapper {
+      padding-top: 58px;
+    }
+  }
+}
