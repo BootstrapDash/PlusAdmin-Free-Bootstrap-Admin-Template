@@ -1,26 +1,14 @@
 <table>
-<tr>
-<td>
-<table>
-<tr>
-<td>
-<a href="https://www.bootstrapdash.com/demo/plus-free/template/demo_1/index.html" target="_blank"><img src="screenshot-vertical.jpg"></a>
-<h3>Verical Default</h3>
-</td>
-</tr>
-</table>
-</td>
-<td>
-<table>
-<tr>
-<td>
-<a href="https://www.bootstrapdash.com/demo/plus-free/template/demo_2/index.html" target="_blank"><img src="screenshot-horizontal.jpg"></a>
-<h3>Horizontal Default</h3>
-</td>
-</tr>
-</table>
-</td>
-</tr>
+  <tr>
+    <td>
+      <a href="https://www.bootstrapdash.com/demo/plus-free/template/demo_1/index.html" target="_blank"><img src="screenshot-vertical.jpg"></a>
+      <h3>Vertical</h3>
+    </td>
+    <td>
+      <a href="https://www.bootstrapdash.com/demo/plus-free/template/demo_2/index.html" target="_blank"><img src="screenshot-horizontal.jpg"></a>
+      <h3>Horizontal</h3>
+    </td>
+  </tr>
 </table>
 
 <h1>PlusAdmin-Free-Admin-Template</h1>
@@ -54,7 +42,7 @@ Plus Admin is released under MIT license. Plus Admin is a free Bootstrap 4 admin
 
 <h1>How to use Plus Admin?</h1>
 
-1 - Click the Clone or Download button in GitHub and download as a ZIP file or you can enter the command git clone https://github.com/BootstrapDash/PlusAdmin-Free-Admin-Template.git in you terminal to get a copy of this template.
+1 - Click the Clone or Download button in GitHub and download as a ZIP file or you can enter the command git clone https://github.com/BootstrapDash/PlusAdmin-Free-Bootstrap-Admin-Template.git in you terminal to get a copy of this template.
 
 2 - After the files have been downloaded you will get a folder with all the required files
 
