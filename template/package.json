@@ -8,7 +8,7 @@
     "bootstrap": "^4.3.1",
     "bootstrap-maxlength": "^1.6.0",
     "chart.js": "^2.8.0",
-    "codemirror": "^5.48.0",
+    "codemirror": "^5.58.2",
     "flag-icon-css": "^3.3.0",
     "flot": "^0.8.0-alpha",
     "font-awesome": "^4.7.0",
