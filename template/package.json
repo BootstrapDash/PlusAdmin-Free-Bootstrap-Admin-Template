@@ -7,7 +7,7 @@
     "@mdi/font": "3.7.95",
     "bootstrap": "^4.3.1",
     "bootstrap-maxlength": "^1.6.0",
-    "chart.js": "^2.8.0",
+    "chart.js": "^2.9.4",
     "codemirror": "^5.48.0",
     "flag-icon-css": "^3.3.0",
     "flot": "^0.8.0-alpha",
