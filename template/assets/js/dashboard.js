@@ -1563,7 +1563,7 @@
         legend: false,
         legendCallback: function (chart) {
           var text = [];
-          text.push('<ul class="m-auto pl-0 w-100 d-flex justify-content-between">');
+          text.push('<ul class="m-auto ps-0 w-100 d-flex justify-content-between">');
           for (var i = 0; i < deseaseReportData.datasets[0].data.length; i++) {
             text.push('<li><div><span class="legend-dots" style="background:' +
             deseaseReportData.datasets[0].legendColor[i] +
@@ -1634,7 +1634,7 @@
         legend: false,
         legendCallback: function (chart) {
           var text = [];
-          text.push('<ul class="m-auto pl-0 w-100">');
+          text.push('<ul class="m-auto ps-0 w-100">');
           for (var i = 0; i < employeeDepartmentData.datasets[0].data.length; i++) {
             text.push('<li class="mb-1"><div><span class="legend-dots" style="background:' +
             employeeDepartmentData.datasets[0].legendColor[i] +
@@ -1726,5 +1726,18 @@
     }
     $(".close-hr-banner").on("click", function() {
       $('.hr-banner').hide();
+    });
+    if ($.cookie('plus-free-banner')!="true") {
+      document.querySelector('#proBanner').classList.add('d-flex');
+    }
+    else {
+      document.querySelector('#proBanner').classList.add('d-none');
+    }
+    document.querySelector('#bannerClose').addEventListener('click',function() {
+      document.querySelector('#proBanner').classList.add('d-none');
+      document.querySelector('#proBanner').classList.remove('d-flex');
+      var date = new Date();
+      date.setTime(date.getTime() + 24 * 60 * 60 * 1000); 
+      $.cookie('plus-free-banner', "true", { expires: date });
     });
 })(jQuery);

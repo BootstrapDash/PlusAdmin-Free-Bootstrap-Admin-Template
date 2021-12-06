@@ -12,10 +12,10 @@ gulp.task("clean:vendors", function () {
 gulp.task("buildBaseVendorScripts", function () {
   return gulp
     .src([
-      "./node_modules/jquery/dist/jquery.min.js",
-      "./node_modules/popper.js/dist/umd/popper.min.js",
-      "./node_modules/bootstrap/dist/js/bootstrap.min.js",
-      "./node_modules/perfect-scrollbar/dist/perfect-scrollbar.min.js",
+      './node_modules/jquery/dist/jquery.min.js', 
+        // './node_modules/popper.js/dist/umd/popper.min.js',
+        './node_modules/bootstrap/dist/js/bootstrap.bundle.min.js', 
+        './node_modules/perfect-scrollbar/dist/perfect-scrollbar.min.js'
     ])
     .pipe(concat("vendor.bundle.base.js"))
     .pipe(gulp.dest("./assets/vendors/js"));
@@ -93,7 +93,7 @@ gulp.task("buildOptionalVendorScripts", function () {
     .src(["node_modules/codemirror/mode/shell/shell.js"])
     .pipe(gulp.dest("./assets/vendors/codemirror"));
   var aScript46 = gulp
-    .src(["node_modules/bootstrap-maxlength/bootstrap-maxlength.min.js"])
+    .src(["node_modules/bootstrap-maxlength/dist/bootstrap-maxlength.min.js"])
     .pipe(gulp.dest("./assets/vendors/bootstrap-maxlength"));
   var aScript65 = gulp
     .src(["node_modules/twbs-pagination/jquery.twbsPagination.min.js"])

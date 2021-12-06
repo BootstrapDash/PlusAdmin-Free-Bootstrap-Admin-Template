@@ -122,7 +122,7 @@
             left: auto;
             right: 0;
           }
-          border: solid theme-color(primary);
+          border: solid $primary;
           border-width: 2px;
           width: 20px;
           height: 20px;
@@ -164,7 +164,7 @@
       &:checked {
         +.input-helper {
           &:before {
-            background: theme-color(primary);
+            background: $primary;
             border-width: 0;
           }
 

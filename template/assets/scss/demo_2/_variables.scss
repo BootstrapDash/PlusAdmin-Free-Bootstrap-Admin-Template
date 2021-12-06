@@ -36,6 +36,23 @@ $colors: (
   gray-dark: #0f1531,
   black: #000000,
 );
+$blue: $blue;
+$indigo: $indigo;
+$purple: $purple;
+$pink: $pink;
+$red: $red;
+$orange: $orange;
+$yellow: $yellow;
+$green: $green;
+$teal: $teal;
+$cyan: $cyan;
+$white: $white;
+$gray: #434a54;
+$gray-light: #aab2bd;
+$gray-lighter: #e8eff4;
+$gray-lightest: #e6e9ed;
+$gray-dark: #0f1531;
+$black: #000000;
 
 $theme-colors: (
   primary: #0033c4,
@@ -47,6 +64,15 @@ $theme-colors: (
   light: #f8f9fa,
   dark: #3e4b5b,
 );
+
+$primary: #0033c4;
+$secondary: #a0a0a0;
+$success: #00d284;
+$info: #00cff4;
+$warning: #ff5730;
+$danger: #ff0854;
+$light: #f8f9fa;
+$dark: #3e4b5b;
 
 ////////// COLOR SYSTEM //////////
 
@@ -101,7 +127,7 @@ $horizontal-menu-padding: 0 1rem;
 $horizontal-menu-height: 57px;
 $horizontal-top-menu-item-color: #000000;
 $horizontal-top-font-size: 1rem;
-$horizontal-bottom-bg: theme-color(primary);
+$horizontal-bottom-bg: $primary;
 $horizontal-bottom-menu-item-color: $white;
 $horizontal-bottom-menu-dropdown-bg: $white;
 $horizontal-bottom-menu-dropdown-item-color: $black;
@@ -110,7 +136,7 @@ $horizontal-bottom-menu-item-active-color: $white;
 $horizontal-menu-submenu-color: #202339;
 $horizontal-bottom-menu-item-font-size: 0.875rem;
 $horizontal-bottom-menu-item-hover-bg: transparent;
-$horizontal-bottom-menu-item-hover-color: lighten(theme-color(primary), 18%);
+$horizontal-bottom-menu-item-hover-color: lighten($primary, 18%);
 $horizontal-menu-item-padding: 0.75rem 0;
 $horizontal-menu-icon-font-size: 14px;
 $horizontal-menu-submenu-item-padding: 0.85rem 0;
@@ -128,7 +154,7 @@ $card-bg-varient: #fff;
 ///////// CARD ////////
 
 //////// TABLES ////////
-$table-accent-bg: $content-bg;
+$table-accent-bg: transparent;
 $table-hover-bg: $content-bg;
 $table-cell-padding: 0.9375rem;
 $table-border-color: $border-color;
@@ -142,7 +168,7 @@ $modal-content-bg: $content-bg;
 ////////// MODALS VARIABLES //////////
 
 ///////// NAVBAR ////////
-$navbar-bg: theme-color(primary);
+$navbar-bg: $primary;
 $navbar-height: 60px;
 $navbar-menu-color: #fff;
 $navbar-font-size: 0.875rem;
@@ -262,7 +288,7 @@ $breadcrumb-item-bg: #dbe3e6;
 ////////// BREAD CRUMBS VARIABLES //////////
 
 ////////// MODALS VARIABLES //////////
-$modal-inner-padding: .9375rem;
+$modal-inner-padding: .937rem;
 $modal-dialog-margin: 10px;
 $modal-dialog-margin-y-sm-up: 30px;
 $modal-title-line-height: $line-height-base;
@@ -340,4 +366,6 @@ $page-title-color: $body-color;
 
 //////////// CUSTOM VARIABLES /////////////
 $border-right-color: #313131;
-$icons-page-color: theme-color(primary);
+$icons-page-color: $primary;
+
+$buy-nowbanner-padding-top:60px;

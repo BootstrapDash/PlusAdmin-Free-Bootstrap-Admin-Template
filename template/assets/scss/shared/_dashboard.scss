@@ -32,7 +32,7 @@
       }
       .btn-icon-text {
         font-size: 14px;
-        background: theme-color(success);
+        background: $success;
         padding: 0 19px 0 0;
         border: 0;
         color: $white;
@@ -222,7 +222,7 @@
 }
 
 .title-banner {
-  background: theme-color(primary);
+  background: $primary;
   padding: 28px 36px;
   color: $white;
   width: 100%;
@@ -234,11 +234,11 @@
   padding: 28px 20px;
   i {
     font-size: 30px;
-    color: theme-color(primary);
+    color: $primary;
   }
   p {
     font-size: 12px;
-    color: theme-color(primary);
+    color: $primary;
   }
 }
 .hospital-features {
@@ -399,3 +399,4 @@
     @include badge-variations($value);
   }
 }
+ 

@@ -30,7 +30,7 @@ dl {
   li {
     &:before {
       content: '\F12D';
-      color: theme-color(danger);
+      color: $danger;
     }
   }
 }
@@ -39,7 +39,7 @@ dl {
   li {
     &:before {
       content: '\F142';
-      color: theme-color(success);
+      color: $success;
     }
   }
 }
@@ -48,7 +48,7 @@ dl {
   li {
     &:before {
       content: '\F4CE';
-      color: theme-color(warning);
+      color: $warning;
     }
   }
 }
@@ -86,27 +86,27 @@ dl {
     }
     &:nth-child(1) {
       &:before {
-        background: theme-color(danger);        
+        background: $danger;        
       }
     }
     &:nth-child(2) {
       &:before {
-        background: theme-color(info);        
+        background: $info;        
       }
     }
     &:nth-child(3) {
       &:before {
-        background: theme-color(warning);        
+        background: $warning;        
       }
     }
     &:nth-child(4) {
       &:before {
-        background: theme-color(success);        
+        background: $success;        
       }
     }
     &:nth-child(5) {
       &:before {
-        background: theme-color(primary);        
+        background: $primary;        
       }
     }
   }
@@ -135,7 +135,7 @@ dl {
       height: 12px;
       left: -28px;
       top: 6px;
-      border: 3px solid theme-color(primary);
+      border: 3px solid $primary;
       margin-right: 15px;
       z-index: 2;
       background: $bullet-line-list-shape-bg;

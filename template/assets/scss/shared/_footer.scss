@@ -12,7 +12,7 @@
   font-family: $type-1;
 	font-weight: $font-weight-regular;
   a {
-    color: theme-color(success);
+    color: $success;
     font-size: inherit;
   }
   @media (max-width: 991px) {

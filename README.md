@@ -12,7 +12,7 @@
 </table>
 
 <h1>PlusAdmin-Free-Admin-Template</h1>
-Plus Admin is a free responsive admin template built with Bootstrap 4. The template has colorful, attractive yet simple and elegant design with vertical and horizontal layouts. The template is well crafted, with all the components neatly and carefully designed and arranged within the template.
+Plus Admin is a free responsive admin template built with Bootstrap 5. The template has colorful, attractive yet simple and elegant design with vertical and horizontal layouts. The template is well crafted, with all the components neatly and carefully designed and arranged within the template.
 
 Plus Admin is packed with all the features that fit your needs but not cramped with components you would not even use. It is an excellent fit to build admin panels, e-commerce systems, project management systems, CMS or CRM.
 
@@ -20,7 +20,7 @@ Although the template has a design like none other, it is easily customizable to
 
 <h1>Credits:</h1>
 
-- Bootstrap 4
+- Bootstrap 5
 - Material Design Icons
 - jQuery
 - Gulp
@@ -38,7 +38,7 @@ Plus Admin is designed to work flawlessly with all the latest and modern web bro
 
 <h1>License Information:</h1>
 
-Plus Admin is released under MIT license. Plus Admin is a free Bootstrap 4 admin template developed from BootstrapDash. Feel free to download it, use it, share it, get creative with it.
+Plus Admin is released under MIT license. Plus Admin is a free Bootstrap 5 admin template developed from BootstrapDash. Feel free to download it, use it, share it, get creative with it.
 
 <h1>How to use Plus Admin?</h1>
 

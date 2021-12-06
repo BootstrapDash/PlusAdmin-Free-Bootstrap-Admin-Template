@@ -8,7 +8,7 @@
       width: auto;
       height: $horizontal-top-navbar-height;
       .navbar-brand {
-        color: lighten(color(gray-dark), 20%);
+        color: lighten($gray-dark, 20%);
         font-size: 1.5rem;
         margin-right: 0;
         padding: 0.25rem 0;
@@ -28,7 +28,7 @@
         &:active,
         &:focus,
         &:hover {
-          color: lighten(color(gray-dark), 10%);
+          color: lighten($gray-dark, 10%);
         }
 
         img {
@@ -66,6 +66,9 @@
         border: 0;
         color: inherit;
         font-size: 1.5rem;
+        &:focus {
+          box-shadow: none;
+        }
         &:not(.navbar-toggler-right) {
           @media (max-width: 991px) {
             display: none;
@@ -219,7 +222,7 @@
                 }
                 .rtl & {
                   i {
-                    @extend .mr-0;
+                    @extend .me-0;
                     margin-left: 10px;
                   }
                   .badge {
@@ -482,22 +485,22 @@
                 @include border-radius(6px);
 
                 &:hover {
-                  color: theme-color(primary);
+                  color: $primary;
                   @include transition(color 0.1s linear);
                   &:before {
-                    background: theme-color(primary);
+                    background: $primary;
                   }
                 }
                 &.active {
-                  color: theme-color(primary);
+                  color: $primary;
                 }
               }
 
               &.active {
                 a {
-                  color: theme-color(primary);
+                  color: $primary;
                   &:before {
-                    background: theme-color(primary);
+                    background: $primary;
                   }
                 }
               }

@@ -2,7 +2,7 @@
 body,
 html {
   overflow-x: hidden;
-  @extend .pr-0;
+  @extend .pe-0;
 }
 
 *:-moz-full-screen,
@@ -23,7 +23,7 @@ pre {
 
 code {
   padding: 5px;
-  color: theme-color(danger);
+  color: $danger;
   font-family: $type-1;
   font-weight: $font-weight-light;
   font-size: $default-font-size;

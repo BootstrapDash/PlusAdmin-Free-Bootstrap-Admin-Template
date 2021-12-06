@@ -36,7 +36,7 @@
           font-size: 1.125rem;
           margin: 0;
           .rtl & {
-            @extend .ml-0;
+            @extend .ms-0;
           }
         }
       }
@@ -89,9 +89,9 @@
       @include flex-direction(row);
       i {
         width: 29px;
-        color: color(gray-lightest);
+        color: $gray-lightest;
         height: 29px;
-        border: 2px solid color(gray-lightest);
+        border: 2px solid $gray-lightest;
         border-radius: 100%;
         padding: 3px 6px;
         display: inline-block;

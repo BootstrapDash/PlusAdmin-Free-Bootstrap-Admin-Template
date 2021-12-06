@@ -17,7 +17,6 @@
 .container-scroller {
   .content-wrapper {
     @include make-container();
-    @include make-container-max-widths();
     margin: auto;
     padding: 22px 0.937rem;
     min-height: calc(100vh - 161px);
